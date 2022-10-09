@@ -19,21 +19,32 @@ export default {
         //   { title: 'strong boi', value: 'strong' },
         //   { title: 'Emphasis boi', value: 'em' },
         // ],
-        annotations: [
-          {
-            title: 'URL',
-            name: 'link',
-            type: 'object',
-            fields: [
-              {
-                title: 'URL',
-                name: 'href',
-                type: 'url',
-              },
-            ],
-          },
-        ], // adding custom objects
+        // annotations: [
+        //   {
+        //     title: 'URL',
+        //     name: 'link',
+        //     type: 'object',
+        //     fields: [
+        //       {
+        //         title: 'URL',
+        //         name: 'href',
+        //         type: 'url',
+        //       },
+        //       {
+        //         title: 'Note',
+        //         name: 'note',
+        //         type: 'string',
+        //       },
+        //     ],
+        //   },
+        // ], // adding custom objects
       },
+    },
+    {
+      type: 'customImage',
+    },
+    {
+      type: 'customCode',
     },
   ],
 };

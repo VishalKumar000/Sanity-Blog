@@ -26,10 +26,34 @@ export default {
       name: 'publishedAt',
       type: 'datetime',
     },
+    // one to many
+    {
+      title: 'Categories',
+      name: 'categories',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'category' }],
+        },
+      ],
+    },
+    // many to one
+    {
+      title: 'Author',
+      name: 'author',
+      type: 'reference',
+      to: [{ type: 'author' }],
+    },
     {
       title: 'Cover Image',
       name: 'coverImage',
       type: 'customImage',
+    },
+    {
+      title: 'Excerpt',
+      name: 'excerpt',
+      type: 'excerptText',
     },
     {
       title: 'Blog Body',

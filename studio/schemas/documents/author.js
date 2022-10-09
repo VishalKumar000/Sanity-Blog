@@ -7,8 +7,8 @@ export default {
   icon: MdPerson,
   fields: [
     {
-      title: 'name',
-      name: 'Name',
+      title: 'Name',
+      name: 'name',
       type: 'string',
     },
     {
@@ -16,7 +16,7 @@ export default {
       name: 'slug',
       type: 'slug',
       options: {
-        source: 'Name',
+        source: 'name',
         maxLength: 96,
       },
     },
@@ -25,10 +25,15 @@ export default {
       name: 'profileImage',
       type: 'customImage',
     },
+    {
+      title: 'Bio',
+      name: 'bio',
+      type: 'bodyText',
+    },
   ],
   preview: {
     select: {
-      title: 'Name',
+      title: 'name',
       image: 'profileImage',
       slug: 'slug',
     },

@@ -10,6 +10,7 @@ function SidebarList() {
         .id('featuredItems')
         .icon(MdStar)
         .child(S.editor().schemaType('featured').documentId('featuredItems')),
+
       ...S.documentTypeListItems().filter(
         (item) => item.getId() !== 'featured'
       ),
@@ -17,3 +18,5 @@ function SidebarList() {
 }
 
 export default SidebarList;
+
+// By default it have multiple child but there we try to make only single child of featured one
