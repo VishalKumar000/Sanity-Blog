@@ -1,6 +1,6 @@
 export default {
-  title: 'Excerpt Text',
-  name: 'excerptText',
+  title: 'Normal Text',
+  name: 'normalText',
   type: 'array',
   of: [
     {
@@ -10,7 +10,10 @@ export default {
       // styles: [],
       // lists: [],
       // marks: {
-      //   decorators: [],
+      //   decorators: [
+      //   { title: 'Strong' , value: 'strong' }
+      //   { title: 'Emphasis', value: 'em' }
+      // ],
       //   annotations: [],
       // },
     },

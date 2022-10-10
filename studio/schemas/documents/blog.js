@@ -51,14 +51,15 @@ export default {
       type: 'customImage',
     },
     {
-      title: 'Excerpt',
+      title: 'Normal Text',
       name: 'excerpt',
-      type: 'excerptText',
+      type: 'normalText',
+      description: 'A short description of the blog post',
     },
     {
       title: 'Blog Body',
       name: 'body',
-      type: 'bodyText',
+      type: 'richText',
     },
     // {
     //     title: 'cover image',
