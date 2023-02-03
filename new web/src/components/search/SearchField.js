@@ -1,6 +1,6 @@
-import React from 'react';
-import { FiSearch } from 'react-icons/fi';
-import { SearchFieldStyles } from '../../styles/search/SearchFieldStyles';
+import React from 'react'
+import { FiSearch } from 'react-icons/fi'
+import { SearchFieldStyles } from '../../styles/search/SearchFieldStyles'
 
 function SearchField({ value, setValue, onFocus }) {
   return (
@@ -9,12 +9,12 @@ function SearchField({ value, setValue, onFocus }) {
         type="text"
         placeholder="Search"
         value={value}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={e => setValue(e.target.value)}
         onFocus={onFocus && onFocus}
       />
       <FiSearch className="searchIcon" />
     </SearchFieldStyles>
-  );
+  )
 }
 
-export default SearchField;
+export default SearchField

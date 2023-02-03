@@ -1,7 +1,7 @@
-import React from 'react';
-import { PageHeaderStyles } from '../styles/PageHeaderStyles';
-import ParagraphText from './typography/ParagraphText';
-import { SectionTitle } from './typography/Title';
+import React from 'react'
+import { PageHeaderStyles } from '../styles/PageHeaderStyles'
+import ParagraphText from './typography/ParagraphText'
+import { SectionTitle } from './typography/Title'
 
 function PageHeader({ title, description, children, className }) {
   return (
@@ -12,7 +12,7 @@ function PageHeader({ title, description, children, className }) {
         {children}
       </PageHeaderStyles>
     </div>
-  );
+  )
 }
 
-export default PageHeader;
+export default PageHeader

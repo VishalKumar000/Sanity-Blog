@@ -1,11 +1,11 @@
-import React from 'react';
-import { CategoryGridStyles } from '../../styles/category/CategoryGridStyles';
-import CategoryItem from './CategoryItem';
+import React from 'react'
+import { CategoryGridStyles } from '../../styles/category/CategoryGridStyles'
+import CategoryItem from './CategoryItem'
 
 function CategoryGrid({ categories }) {
   return (
     <CategoryGridStyles>
-      {categories.map((item) => (
+      {categories.map(item => (
         <CategoryItem
           key={item.id}
           title={item.title}
@@ -14,7 +14,7 @@ function CategoryGrid({ categories }) {
         />
       ))}
     </CategoryGridStyles>
-  );
+  )
 }
 
-export default CategoryGrid;
+export default CategoryGrid

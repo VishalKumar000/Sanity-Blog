@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import PageSpace from '../components/PageSpace';
-import ParagraphText from '../components/typography/ParagraphText';
-import { SectionTitle } from '../components/typography/Title';
-import { NotFoundPageStyles } from '../styles/NotFoundPageStyles';
+import React from 'react'
+import { Link } from 'gatsby'
+import PageSpace from '../components/PageSpace'
+import ParagraphText from '../components/typography/ParagraphText'
+import { SectionTitle } from '../components/typography/Title'
+import { NotFoundPageStyles } from '../styles/NotFoundPageStyles'
 
 function NotFoundPage() {
   return (
@@ -20,7 +20,7 @@ function NotFoundPage() {
         </NotFoundPageStyles>
       </div>
     </PageSpace>
-  );
+  )
 }
 
-export default NotFoundPage;
+export default NotFoundPage

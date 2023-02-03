@@ -1,9 +1,9 @@
-import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby';
-import { HeroSectionStyles } from '../../styles/homePage/HeroSectionStyles';
-import ParagraphText from '../typography/ParagraphText';
-import Button from '../buttons/Button';
+import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
+import { HeroSectionStyles } from '../../styles/homePage/HeroSectionStyles'
+import ParagraphText from '../typography/ParagraphText'
+import Button from '../buttons/Button'
 
 function HeroSection() {
   return (
@@ -32,7 +32,7 @@ function HeroSection() {
         </div>
       </div>
     </HeroSectionStyles>
-  );
+  )
 }
 
-export default HeroSection;
+export default HeroSection

@@ -1,10 +1,10 @@
-import { Link } from 'gatsby';
-import React from 'react';
-import { menu } from '../constants/menu';
-import { socialLinks } from '../constants/socialLinks';
-import { FooterStyles } from '../styles/FooterStyles';
-import Logo from './Logo';
-import ParagraphText from './typography/ParagraphText';
+import { Link } from 'gatsby'
+import React from 'react'
+import { menu } from '../constants/menu'
+import { socialLinks } from '../constants/socialLinks'
+import { FooterStyles } from '../styles/FooterStyles'
+import Logo from './Logo'
+import ParagraphText from './typography/ParagraphText'
 
 function Footer() {
   return (
@@ -18,14 +18,14 @@ function Footer() {
           vero!
         </ParagraphText>
         <ul className="footer__menuList">
-          {menu.map((item) => (
+          {menu.map(item => (
             <li key={item.path}>
               <Link to={item.path}>{item.title}</Link>
             </li>
           ))}
         </ul>
         <ul className="footer__socialList">
-          {socialLinks.map((item) => (
+          {socialLinks.map(item => (
             <li key={item.name}>
               <a href={item.url}>{item.icon}</a>
             </li>
@@ -37,7 +37,7 @@ function Footer() {
         </ParagraphText>
       </div>
     </FooterStyles>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

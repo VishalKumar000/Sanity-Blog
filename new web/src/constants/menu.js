@@ -15,4 +15,4 @@ export const menu = [
     title: 'Authors',
     path: '/authors',
   },
-];
+]

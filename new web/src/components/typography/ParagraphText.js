@@ -1,8 +1,8 @@
-import React from 'react';
-import { ParagraphTextStyles } from '../../styles/typography/ParagraphTextStyles';
+import React from 'react'
+import { ParagraphTextStyles } from '../../styles/typography/ParagraphTextStyles'
 
 function ParagraphText({ children, ...props }) {
-  return <ParagraphTextStyles {...props}>{children}</ParagraphTextStyles>;
+  return <ParagraphTextStyles {...props}>{children}</ParagraphTextStyles>
 }
 
-export default ParagraphText;
+export default ParagraphText

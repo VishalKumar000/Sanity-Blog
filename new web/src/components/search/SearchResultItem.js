@@ -1,14 +1,14 @@
-import { GatsbyImage } from 'gatsby-plugin-image';
-import React, { useContext } from 'react';
-import { format } from 'date-fns';
-import { SearchResultItemStyles } from '../../styles/search/SearchResultItemStyles';
-import ParagraphText from '../typography/ParagraphText';
-import { Title } from '../typography/Title';
+import { GatsbyImage } from 'gatsby-plugin-image'
+import React, { useContext } from 'react'
+import { format } from 'date-fns'
+import { SearchResultItemStyles } from '../../styles/search/SearchResultItemStyles'
+import ParagraphText from '../typography/ParagraphText'
+import { Title } from '../typography/Title'
 
-import { SearchModalContext } from '../../contexts/searchModalContext';
+import { SearchModalContext } from '../../contexts/searchModalContext'
 
 function BlogSearchResultItem({ blog }) {
-  const { closeSearchModal } = useContext(SearchModalContext);
+  const { closeSearchModal } = useContext(SearchModalContext)
   return (
     <SearchResultItemStyles
       to={`/blogs/${blog.slug.current}`}
@@ -26,11 +26,11 @@ function BlogSearchResultItem({ blog }) {
         </ParagraphText>
       </div>
     </SearchResultItemStyles>
-  );
+  )
 }
 
 function CategorySearchResultItem({ category }) {
-  const { closeSearchModal } = useContext(SearchModalContext);
+  const { closeSearchModal } = useContext(SearchModalContext)
   return (
     <SearchResultItemStyles
       to={`/categories/${category.slug.current}`}
@@ -38,11 +38,11 @@ function CategorySearchResultItem({ category }) {
     >
       <Title className="title">{category.title}</Title>
     </SearchResultItemStyles>
-  );
+  )
 }
 
 function AuthorSearchResultItem({ author }) {
-  const { closeSearchModal } = useContext(SearchModalContext);
+  const { closeSearchModal } = useContext(SearchModalContext)
   return (
     <SearchResultItemStyles
       to={`/authors/${author.slug.current}`}
@@ -55,10 +55,10 @@ function AuthorSearchResultItem({ author }) {
       />
       <Title className="title">{author.name}</Title>
     </SearchResultItemStyles>
-  );
+  )
 }
 export {
   CategorySearchResultItem,
   BlogSearchResultItem,
   AuthorSearchResultItem,
-};
+}

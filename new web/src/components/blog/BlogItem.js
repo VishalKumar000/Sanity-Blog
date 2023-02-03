@@ -1,10 +1,10 @@
-import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import { format } from 'date-fns';
-import React from 'react';
-import { BlogItemStyles } from '../../styles/blog/BlogItemStyles';
-import ParagraphText from '../typography/ParagraphText';
-import { Title } from '../typography/Title';
+import { Link } from 'gatsby'
+import { GatsbyImage } from 'gatsby-plugin-image'
+import { format } from 'date-fns'
+import React from 'react'
+import { BlogItemStyles } from '../../styles/blog/BlogItemStyles'
+import ParagraphText from '../typography/ParagraphText'
+import { Title } from '../typography/Title'
 
 function BlogItem({ path, title, image, categories, publishedAt }) {
   return (
@@ -33,7 +33,7 @@ function BlogItem({ path, title, image, categories, publishedAt }) {
         ))}
       </ParagraphText>
     </BlogItemStyles>
-  );
+  )
 }
 
-export default BlogItem;
+export default BlogItem

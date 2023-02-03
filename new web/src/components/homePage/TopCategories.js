@@ -1,9 +1,9 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import React from 'react';
-import { TopCategoriesStyles } from '../../styles/homePage/TopCategoriesStyles';
-import CategoryGrid from '../category/CategoryGrid';
-import ParagraphText from '../typography/ParagraphText';
-import { SectionTitle } from '../typography/Title';
+import { graphql, useStaticQuery } from 'gatsby'
+import React from 'react'
+import { TopCategoriesStyles } from '../../styles/homePage/TopCategoriesStyles'
+import CategoryGrid from '../category/CategoryGrid'
+import ParagraphText from '../typography/ParagraphText'
+import { SectionTitle } from '../typography/Title'
 
 function TopCategories() {
   const data = useStaticQuery(graphql`
@@ -21,8 +21,8 @@ function TopCategories() {
         }
       }
     }
-  `);
-  const categories = data.allSanityFeatured.nodes[0].category;
+  `)
+  const categories = data.allSanityFeatured.nodes[0].category
   return (
     <TopCategoriesStyles>
       <SectionTitle>Top Categories</SectionTitle>
@@ -32,7 +32,7 @@ function TopCategories() {
       </ParagraphText>
       <CategoryGrid categories={categories} />
     </TopCategoriesStyles>
-  );
+  )
 }
 
-export default TopCategories;
+export default TopCategories

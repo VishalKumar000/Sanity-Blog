@@ -1,11 +1,11 @@
-import React from 'react';
-import { AuthorGridStyles } from '../../styles/author/AuthorGridStyles';
-import AuthorItem from './AuthorItem';
+import React from 'react'
+import { AuthorGridStyles } from '../../styles/author/AuthorGridStyles'
+import AuthorItem from './AuthorItem'
 
 function AuthorGrid({ authors }) {
   return (
     <AuthorGridStyles>
-      {authors.map((item) => (
+      {authors.map(item => (
         <AuthorItem
           key={item.id}
           name={item.name}
@@ -14,7 +14,7 @@ function AuthorGrid({ authors }) {
         />
       ))}
     </AuthorGridStyles>
-  );
+  )
 }
 
-export default AuthorGrid;
+export default AuthorGrid

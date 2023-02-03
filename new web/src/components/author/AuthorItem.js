@@ -1,7 +1,7 @@
-import React from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import { AuthorItemStyles } from '../../styles/author/AuthorItemStyles';
-import { Title } from '../typography/Title';
+import React from 'react'
+import { GatsbyImage } from 'gatsby-plugin-image'
+import { AuthorItemStyles } from '../../styles/author/AuthorItemStyles'
+import { Title } from '../typography/Title'
 
 function AuthorItem({ name, slug, profileImage }) {
   return (
@@ -13,7 +13,7 @@ function AuthorItem({ name, slug, profileImage }) {
       />
       <Title>{name}</Title>
     </AuthorItemStyles>
-  );
+  )
 }
 
-export default AuthorItem;
+export default AuthorItem

@@ -1,9 +1,9 @@
-import React from 'react';
-import MyPortableText from '../MyPortableText';
-import Button from '../buttons/Button';
-import { buttonTypes } from '../../constants/buttonTypes';
-import { CategoryItemStyles } from '../../styles/category/CategoryItemStyles';
-import { Title } from '../typography/Title';
+import React from 'react'
+import MyPortableText from '../MyPortableText'
+import Button from '../buttons/Button'
+import { buttonTypes } from '../../constants/buttonTypes'
+import { CategoryItemStyles } from '../../styles/category/CategoryItemStyles'
+import { Title } from '../typography/Title'
 
 function CategoryItem({ title, description, slug }) {
   return (
@@ -16,7 +16,7 @@ function CategoryItem({ title, description, slug }) {
         Explore Category
       </Button>
     </CategoryItemStyles>
-  );
+  )
 }
 
-export default CategoryItem;
+export default CategoryItem

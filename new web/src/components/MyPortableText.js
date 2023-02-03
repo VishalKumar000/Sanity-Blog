@@ -1,13 +1,13 @@
-import { PortableText } from '@portabletext/react';
-import React from 'react';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import theme from 'react-syntax-highlighter/dist/esm/styles/prism/vs-dark';
-import { getImage, getImageDimensions } from '@sanity/asset-utils';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import ParagraphText from './typography/ParagraphText';
-import { Title } from './typography/Title';
-import sanityConfig from '../../sanity-config';
-import { getSanityImageData } from '../utils/getSanityImageData';
+import { PortableText } from '@portabletext/react'
+import React from 'react'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import theme from 'react-syntax-highlighter/dist/esm/styles/prism/vs-dark'
+import { getImage, getImageDimensions } from '@sanity/asset-utils'
+import { GatsbyImage } from 'gatsby-plugin-image'
+import ParagraphText from './typography/ParagraphText'
+import { Title } from './typography/Title'
+import sanityConfig from '../../sanity-config'
+import { getSanityImageData } from '../utils/getSanityImageData'
 
 const myPortableTextComponents = {
   block: {
@@ -32,19 +32,19 @@ const myPortableTextComponents = {
       </SyntaxHighlighter>
     ),
     customImage: ({ value }) => {
-      const imageData = getImage(value.asset, sanityConfig).asset;
-      const { width, height } = getImageDimensions(value);
+      const imageData = getImage(value.asset, sanityConfig).asset
+      const { width, height } = getImageDimensions(value)
 
       const image = {
         url: imageData.url,
         width,
         height,
-      };
+      }
 
       const gatsbyImageData = getSanityImageData({
         image,
         layout: 'constrained',
-      });
+      })
 
       return (
         <GatsbyImage
@@ -52,13 +52,13 @@ const myPortableTextComponents = {
           alt={value.alt}
           className="bodyImage"
         />
-      );
+      )
     },
   },
-};
-
-function MyPortableText({ value }) {
-  return <PortableText value={value} components={myPortableTextComponents} />;
 }
 
-export default MyPortableText;
+function MyPortableText({ value }) {
+  return <PortableText value={value} components={myPortableTextComponents} />
+}
+
+export default MyPortableText

@@ -1,5 +1,5 @@
-import React from 'react';
-import ActionButtonStyles from '../../styles/buttons/ActionButtonStyles';
+import React from 'react'
+import ActionButtonStyles from '../../styles/buttons/ActionButtonStyles'
 
 function ActionButton({ children, ...rest }) {
   return (
@@ -11,7 +11,7 @@ function ActionButton({ children, ...rest }) {
     >
       {children}
     </ActionButtonStyles>
-  );
+  )
 }
 
-export default ActionButton;
+export default ActionButton

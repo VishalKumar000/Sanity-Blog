@@ -1,34 +1,34 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { Link } from 'gatsby';
-import clsx from 'clsx';
-import { MdClose, MdMenu, MdSearch } from 'react-icons/md';
-import HeaderStyles from '../styles/HeaderStyles';
-import Logo from './Logo';
-import ActionButton from './buttons/ActionButton';
-import { menu } from '../constants/menu';
-import { SearchModalContext } from '../contexts/searchModalContext';
+import React, { useContext, useEffect, useState } from 'react'
+import { Link } from 'gatsby'
+import clsx from 'clsx'
+import { MdClose, MdMenu, MdSearch } from 'react-icons/md'
+import HeaderStyles from '../styles/HeaderStyles'
+import Logo from './Logo'
+import ActionButton from './buttons/ActionButton'
+import { menu } from '../constants/menu'
+import { SearchModalContext } from '../contexts/searchModalContext'
 
 function Header() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  const { openSearchModal } = useContext(SearchModalContext);
+  const [isNavOpen, setIsNavOpen] = useState(false)
+  const { openSearchModal } = useContext(SearchModalContext)
 
   useEffect(() => {
     if (isNavOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden'
     } else {
-      document.body.style.overflow = 'initial';
+      document.body.style.overflow = 'initial'
     }
-  }, [isNavOpen]);
+  }, [isNavOpen])
 
   const handleSearchModalOpen = () => {
-    openSearchModal();
-  };
+    openSearchModal()
+  }
 
   const handleNavItemClick = () => {
     if (isNavOpen) {
-      setIsNavOpen(false);
+      setIsNavOpen(false)
     }
-  };
+  }
 
   return (
     <HeaderStyles>
@@ -77,7 +77,7 @@ function Header() {
                 <MdClose />
               </ActionButton>
               <ul>
-                {menu.map((item) => (
+                {menu.map(item => (
                   <li key={item.path}>
                     <Link to={item.path} onClick={handleNavItemClick}>
                       {item.title}
@@ -101,7 +101,7 @@ function Header() {
         </div>
       </div>
     </HeaderStyles>
-  );
+  )
 }
 
-export default Header;
+export default Header
